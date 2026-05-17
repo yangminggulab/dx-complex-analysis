@@ -1,34 +1,44 @@
-<!-- Author : Dongsheng Deng & Liam Huang-->
-<!-- Program Email: elegantlatex2e@gmail.com -->
+# dx 的复变函数
 
-[Homepage](https://elegantlatex.org/) | [Github](https://github.com/ElegantLaTeX/ElegantBook) | [CTAN](https://ctan.org/pkg/elegantbook) | [Download](https://github.com/ElegantLaTeX/ElegantBook/releases) | [Wiki](https://github.com/ElegantLaTeX/ElegantBook/wiki) | [Weibo](https://weibo.com/elegantlatex)
+## 序
 
-![License](https://img.shields.io/ctan/l/elegantbook.svg) ![CTAN Version](https://img.shields.io/ctan/v/elegantbook.svg) ![Github Version](https://img.shields.io/github/release/ElegantLaTeX/ElegantBook.svg) ![Repo Size](https://img.shields.io/github/repo-size/ElegantLaTeX/ElegantBook.svg)
+这本书大概是我个人气息最重的一本。
 
--------
+因为我进入复变函数，并不是从“它有很多定理、很多技巧、很多好看的积分题”开始的，而是从一个很直接的感觉开始的: 复数是在给问题升维。`main.tex` 开头那段 `dxtips` 里写得很坦白, 求导很多时候像一种降维，信息会减少，复杂度反而会上升；而复变函数像是在原来紧巴巴的平面上重新打开一个空间，让问题一下子变得更有结构。
 
-# ElegantBook: An Elegant LaTeX Template for Books
+我到现在还是很喜欢这个说法。因为它解释了我为什么会对复变函数着迷。很多人第一次学这门课，会觉得它“神奇”，觉得很多结论突然就比实变量世界强太多了: 一次可导竟然能推出无穷次可导，积分公式竟然能控制函数值，奇点附近的局部信息竟然能决定一大圈的行为。可如果你愿意先接受“这是一个更有结构的世界”，这些神奇就不再只是神奇，它们会慢慢变得顺理成章。
 
-ElegantBook is designed for writing books, created by [Dongsheng Deng](https://ddswhu.me/) and [Liam Huang](https://liam.page/). Just enjoy it! If you have any questions, suggestions or bug reports, you can create issues or contact us at elegantlatex2e@gmail.com.
+## 为什么我想写这本书
 
-## Important Notes
+我不太想把复变函数写成一本只有公式和定理的标准笔记。因为在我看来，这门课真正珍贵的地方，不是多会算一道留数题，而是它会逼着你第一次很认真地去看“映射”这件事本身。
 
-For some reasons, __unauthorized__ pull requests are **UNACCEPTABLE** since May 20, 2019. For those who want to help revise the templates, submit issues or clone to your own repository to modify under the LPPL-1.3c.
+复数不是死的数字，复变函数也不是把一个数代进去再吐出另一个数那么简单。书里有一句我很喜欢的话: “复数是一个向量映射到另一个向量。”只要真的把这句话当回事，很多内容都会开始发亮。实部和虚部不再只是拆开计算的两个坐标，它们是平面中的位置；模长和辐角不再只是写成极坐标形式时顺手一提的量，它们对应的是缩放和旋转；全纯、保角、分支、割线，也都会从一堆名词，慢慢长成一幅完整的图像。
 
-## Acknowledgement
+所以我在这本书里刻意保留了很多 `dxtips`。像“虚部总是和旋转有关”“最重要 tip”“映射与抽代”“割线是为了把多值函数切成单值函数”，这些都不是我写累了以后顺手丢下的备注，而是我真正觉得最该传给读者的直觉。因为复变函数一旦失去图像感，就很容易只剩技巧；而一旦图像感回来，这门课会变得非常迷人。
 
-Thank [sikouhjw](https://github.com/sikouhjw) and [syvshc](https://github.com/syvshc) for their quick response to Github issues and continuously support work for ElegantLaTeX.
+## 这本书想讲的，其实是一条线
 
-Thank ChinaTeX and [LaTeX Studio](http://www.latexstudio.net/) for their promotion. 
+它当然也按章节展开: 从复数基础、收敛、完备性开始，进入柯西-黎曼条件、解析函数、复积分、柯西定理、幂级数、零点奇点、留数这些核心主题。
 
+但如果只把它看成目录，你会低估这本书真正想做的事。因为它一直在反复追同一个问题: 当一个平面上的点，被映射到另一个平面上的点时，到底有哪些结构被保留了，哪些复杂性被重新组织了。
 
-## License
+你可以把这条线理解成“把代数语言和几何语言接起来”。有时候它表现为旋转和缩放，有时候表现为局部线性化，有时候表现为积分和路径无关，有时候又表现为多值函数为什么必须引入割线。表面上看是不同章节，深处其实是在讲同一件事。
 
-This work is released under the LaTeX Project Public License, v1.3c or later.
+## 我想把它写给谁
 
+我想把它写给那种对复变函数又喜欢又害怕的人。
 
-## Derivative Works
+喜欢，是因为这门课确实漂亮，漂亮到很多结论第一次看到时会有一种“怎么会这样”的兴奋。害怕，是因为一旦失去图像，整门课又会迅速变成一堆不好靠近的技术术语。  
 
-+ [ElegantBookdown](https://github.com/XiangyunHuang/ElegantBookdown)：[XiangyunHuang](https://github.com/XiangyunHuang) developed a Bookdown template based on ElegantBook.
-+ [bookdownplus](https://github.com/pzhaonet/bookdownplus): maintained by [pzhaonet](https://github.com/pzhaonet).
-+ [PanBook](https://github.com/annProg/PanBook)：a markdown-based writing workflow Developed by [annProg](https://github.com/annProg).
+如果你现在就在这个中间地带，那我希望这本书能帮你把“神奇感”拆开。不是把它拆得无聊，而是把它拆到你可以真正走进去。你会慢慢发现，复变函数并不是在炫耀它比实变量强多少，而是在告诉你: 当结构足够好时，数学会突然变得非常统一。
+
+## 最后
+
+如果这本书最后能让你在看到一个复数时，下意识想到的不只是“这是个代数对象”，而是“这是平面上的一个位置、一个方向、一个旋转”；如果它能让你在学到全纯、柯西积分公式、幂级数和留数时，感觉这些内容不是散开的技巧，而是在同一块地基上长出来的东西；如果它能让你第一次真正意识到，所谓“复分析之美”不是夸张修辞，而是一种可以被一步步看懂的结构，那么这本书就达到了我最想让它达到的目的。
+
+## 仓库说明
+
+- 主文件是 `main.tex`。
+- 目前主体内容集中在一个主文档里，按章节覆盖基础、柯西-黎曼条件、积分、幂级数与留数。
+- 仓库中另有 `elegantbook-en.tex`，那是模板示例文件，不是本书正文。
+- 若需要本地编译，通常运行 `xelatex main.tex` 两次即可。
